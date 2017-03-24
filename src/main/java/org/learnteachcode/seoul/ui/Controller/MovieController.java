@@ -1,22 +1,25 @@
 package org.learnteachcode.seoul.ui.Controller;
 
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.RestController;
+
+import java.util.Map;
 
 /**
  * Created by mashhur on 3/22/17.
  */
 
-@RestController
-@EnableAutoConfiguration
+@Controller
 public class MovieController {
 
+    // inject via application.properties
+    @Value("${welcome.message:test}")
+    private String message = "Hello World";
+
     @RequestMapping("/")
-    @ResponseBody
-    String home() {
-        return "Welcome to MovieGram!";
+    public String welcome(Map<String, Object> model) {
+        model.put("message", this.message);
+        return "welcome";
     }
 }

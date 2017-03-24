@@ -1,5 +1,6 @@
 package org.learnteachcode.seoul;
 
+import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.support.SpringBootServletInitializer;
@@ -16,7 +17,7 @@ public class Application extends SpringBootServletInitializer {
         return application.sources(Application.class);
     }
 
-    public static void main(String[] args) {
-        new Application().configure(new SpringApplicationBuilder(Application.class)).run(args);
+    public static void main(String[] args) throws Exception {
+        SpringApplication.run(Application.class, args);
     }
 }
