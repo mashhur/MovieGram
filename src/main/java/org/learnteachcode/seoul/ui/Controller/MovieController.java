@@ -6,10 +6,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.util.Map;
 
-/**
- * Created by mashhur on 3/22/17.
- */
-
 @Controller
 public class MovieController {
 

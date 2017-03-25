@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xmlns="http://maven.apache.org/POM/4.0.0"
-        xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.learnteachcode.seoul</groupId>
@@ -15,17 +15,13 @@
     </parent>
 
     <properties>
-        <spring-framework.version>4.1.5RELEASE</spring-framework.version>
+        <junit.version>4.12</junit.version>
         <java.version>1.8</java.version>
+        <eclipse.compiler.version>4.6.1</eclipse.compiler.version>
+        <webjars.version>3.3.7</webjars.version>
     </properties>
 
     <dependencies>
-        <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot</artifactId>
-            <version>1.5.2.RELEASE</version>
-        </dependency>
         <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-web -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -53,7 +49,7 @@
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>4.12</version>
+            <version>${junit.version}</version>
             <scope>test</scope>
         </dependency>
 
@@ -69,7 +65,7 @@
         <dependency>
             <groupId>org.eclipse.jdt.core.compiler</groupId>
             <artifactId>ecj</artifactId>
-            <version>4.6.1</version>
+            <version>${eclipse.compiler.version}</version>
             <scope>provided</scope>
         </dependency>
 
@@ -77,7 +73,7 @@
         <dependency>
             <groupId>org.webjars</groupId>
             <artifactId>bootstrap</artifactId>
-            <version>3.3.7</version>
+            <version>${webjars.version}</version>
         </dependency>
     </dependencies>
 
