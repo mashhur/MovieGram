@@ -16,6 +16,6 @@ public class MovieController {
     @RequestMapping("/")
     public String welcome(Map<String, Object> model) {
         model.put("message", this.message);
-        return "welcome";
+        return "welcome"; //return html파일네임
     }
 }
