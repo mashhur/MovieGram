@@ -8,10 +8,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.Map;
 
-/**
- * Created by mashhur on 3/22/17.
- */
-
 @Controller
 public class MovieController {
 
