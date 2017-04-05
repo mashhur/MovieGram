@@ -84,3 +84,7 @@ hs_err_pid*
 # End of https://www.gitignore.io/api/java,intellij+iml
 
 target
+.idea/copyright/
+.idea/jsLibraryMappings.xml
+src/test/
+.idea/*
