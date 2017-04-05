@@ -7,10 +7,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="MovieGram" />
+        <module name="moviegram" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="MovieGram" target="1.8" />
+      <module name="moviegram" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
