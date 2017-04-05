@@ -46,12 +46,6 @@
             <artifactId>spring-boot-starter-test</artifactId>
         </dependency>
 
-        <!-- JSTL for JSP -->
-        <dependency>
-            <groupId>javax.servlet</groupId>
-            <artifactId>jstl</artifactId>
-        </dependency>
-
         <!-- https://mvnrepository.com/artifact/junit/junit -->
         <dependency>
             <groupId>junit</groupId>
@@ -59,34 +53,14 @@
             <version>${junit.version}</version>
             <scope>test</scope>
         </dependency>
-
-        <!-- Need this to compile JSP -->
         <dependency>
-            <groupId>org.apache.tomcat.embed</groupId>
-            <artifactId>tomcat-embed-jasper</artifactId>
-            <scope>provided</scope>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-thymeleaf</artifactId>
         </dependency>
-
-        <!-- Need this to compile JSP,
-    tomcat-embed-jasper version is not working, no idea why -->
-        <dependency>
-            <groupId>org.eclipse.jdt.core.compiler</groupId>
-            <artifactId>ecj</artifactId>
-            <version>${eclipse.compiler.version}</version>
-            <scope>provided</scope>
-        </dependency>
-
-        <!-- Optional, test for static content, bootstrap CSS-->
-        <dependency>
-            <groupId>org.webjars</groupId>
-            <artifactId>bootstrap</artifactId>
-            <version>${webjars.version}</version>
-        </dependency>
-    </dependencies>
 
     <!-- Neo4J dependencies-->
     <!-- Other dependencies-->
-
+    </dependencies>
 
     <!-- Package as an executable jar -->
     <build>
